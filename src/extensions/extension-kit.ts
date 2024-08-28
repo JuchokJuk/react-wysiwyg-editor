@@ -44,6 +44,8 @@ import { CodeBlockLowlight } from '@tiptap/extension-code-block-lowlight'
 import { ImageUpload } from './ImageUpload'
 import { TableOfContentsNode } from './TableOfContentsNode'
 import { lowlight } from 'lowlight'
+import ReactComponent from './ReactComponent/ReactComponent'
+import { SnippetExtension } from './Snippet/Snippet'
 
 interface ExtensionKitProps {
   provider?: HocuspocusProvider | null
@@ -138,6 +140,8 @@ export const ExtensionKit = ({ provider, userId, userName = 'Maxi' }: ExtensionK
     width: 2,
     class: 'ProseMirror-dropcursor border-black',
   }),
+  ReactComponent,
+  SnippetExtension,
 ]
 
 export default ExtensionKit

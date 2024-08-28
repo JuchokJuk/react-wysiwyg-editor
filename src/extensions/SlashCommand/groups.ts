@@ -91,6 +91,15 @@ export const GROUPS: Group[] = [
     title: 'Insert',
     commands: [
       {
+        name: 'reactComponent',
+        label: 'React Component',
+        iconName: 'Box',
+        description: 'Insert a react component',
+        action: editor => {
+          editor.chain().focus().insertReactComponent().run()
+        },
+      },
+      {
         name: 'table',
         label: 'Table',
         iconName: 'Table',

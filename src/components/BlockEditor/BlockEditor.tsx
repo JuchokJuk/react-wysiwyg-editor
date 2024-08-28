@@ -1,7 +1,7 @@
 'use client'
 
-import { EditorContent, PureEditorContent } from '@tiptap/react'
-import React, { useMemo, useRef } from 'react'
+import { EditorContent, PureEditorContent, useEditor } from '@tiptap/react'
+import React, { useEffect, useMemo, useRef } from 'react'
 
 import { LinkMenu } from '@/components/menus'
 
